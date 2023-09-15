@@ -18,7 +18,7 @@ A few instances of web apps constructed using C# comprise Windows Installer XML,
 # Getting Started 
 ### What You Need
 1. Download and open Visual Studio Code([https://code.visualstudio.com/download](url))
-2. Install the C# extansion in VSCode
+2. Install the C# extension in VSCode
 
 ### Start a New C# Project 
 1. Create and open a folder on VSCode where you want your program directory to be
