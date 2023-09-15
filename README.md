@@ -21,7 +21,7 @@ A few instances of web apps constructed using C# comprise Windows Installer XML,
 2. Install the C# extension in VSCode
 
 ### Start a New C# Project 
-1. Create and open a folder on VSCode where you want your program directory to be
+1. Create and open a folder in VSCode where you want your program directory to be
 2. Start a new terminal and input: dotnet new console –framework net7.0
 3. Step 2 should create a .cs file where you can then start your C# program
 4. To run your program, input into the terminal: dotnet run
