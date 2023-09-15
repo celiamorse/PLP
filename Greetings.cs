@@ -1,2 +1,12 @@
-﻿
-Console.WriteLine("Hello, World!"); //Writing Hello, World! to the terminal
+﻿using System;
+
+namespace HelloWorld
+{
+    class Greetings
+    {
+        static void Main(string[] args)
+        {
+            Console.WriteLine("Hello, World!");
+        }
+    }
+}
