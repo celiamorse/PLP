@@ -14,3 +14,15 @@ A few instances of web apps constructed using C# comprise Windows Installer XML,
 #### Guides
 [https://learn.microsoft.com/en-us/dotnet/csharp/programming-guide/](url)
 
+
+# Install/Run Guide
+### What You Need
+1. Download and open Visual Studio Code([https://code.visualstudio.com/download](url))
+2. Install the C# extansion in VSCode
+
+### Start a New C# Project 
+1. Create and open a folder on VSCode where you want your program directory to be
+2. Start a new terminal and input: _dotnet new console –framework net7.0
+_
+
+
