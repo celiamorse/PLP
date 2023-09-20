@@ -8,6 +8,9 @@ Programming Language Project
 ## Uses
 C# is employed in crafting web apps, desktop software, mobile solutions, games, and various other domains.
 
+## History 
+
+
 ### Examples
 A few instances of web apps constructed using C# comprise Windows Installer XML, Microsoft Visual Studio, and FlashDevelop.
 
@@ -31,7 +34,30 @@ Single Line Comments ( // )
 Multi Line Comments ( /* */ )
 
 #### Simple Starter Program
-View the Greetings.cs file to write a simple "Hello, World" statement
+The below code can be written to display a simple statement to the console:
+```
+// The System namespace includes fundamental classes and methods for a C# program
+using System;
+
+// This line declares a namespace, which is used to organize code 
+namespace HelloWorld
+{
+
+/* A class named "Greetings" is declared, which will contain the programs code.
+Note: Your class name and file name must be the same *\
+    class Greetings
+    {
+
+// The  Main method is the entry point to the application
+        static void Main(string[] args)
+        {
+
+/* The next line is a method call to WriteLine, which will display
+"Hello, World!" to your console! *\
+            Console.WriteLine("Hello, World!");
+        }
+    }
+}
 
 
 
