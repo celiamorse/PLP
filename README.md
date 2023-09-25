@@ -188,7 +188,7 @@ You declare the type explicitly (ex: int myInt = 42;).
 You use the var keyword to let the compiler infer the type (ex: var myVar = "Hello";).
 
 ## Mixed Type Operations in C#:
-In C#, you can mix different types of data in operations, like adding an integer and a float
+In C#, you can mix different types of data in operations, like adding an integer and a float.
 
 When you mix types, C# automatically converts them to a compatible type. For example, adding an integer and a float gives you a float as the result.
 
