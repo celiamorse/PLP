@@ -206,7 +206,7 @@ In C#, the names you give to variables, classes, and functions are matched with 
     3.Cannot be a C# keyword.
 
 
-### Binding:
+## Binding:
 
 Binding refers to the association of an identifier with its type and location in memory. In C#, binding occurs during compile-time for most identifiers, and it can also happen at runtime for dynamic binding.
 
@@ -215,11 +215,11 @@ The binding of an identifier to its type and location is determined at compile-t
 ###    Dynamic Binding: 
 In some cases, binding can be determined at runtime, such as with dynamic objects.
 
-### Storage Addresses:
+## Storage Addresses:
 
 For variables, the storage address indicates where the data associated with the identifier is stored in memory. In C#, this is managed by the runtime environment, and developers typically don't need to worry about memory addresses directly.
 
-### Lifetime:
+## Lifetime:
 
 The lifetime of an identifier refers to the duration during which it remains valid and accessible in the program.
 
@@ -233,7 +233,7 @@ Instance variables exist as long as the object they belong to is in memory.
 ###   Static Variables: 
 Static variables exist for the entire lifetime of the program.
 
-### Scope:
+## Scope:
 
 Scope defines the region of the code where an identifier is accessible.
 
