@@ -71,7 +71,7 @@ Variable names typically start with lowercase letters, following the camelCase c
 Variable names cannot start with numbers or symbols other than underscore _.
 
 ### Underscores vs. Camel Case: 
-Camel case (ex: myVariable) is more common than underscores (ex: my_variable).
+camelCase (ex: myVariable) is more common than underscores (ex: my_variable).
 
 ### Example Of Variable Declaration of Common Data Types and Operations:
 
