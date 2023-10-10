@@ -300,7 +300,7 @@ Developers are responsible for managing side effects.
 Local variable values are stored on the stack for value types.
 Reference types have their references on the stack, pointing to the actual objects on the heap.
 
-Dynamic vs. Static Scope:
+## Dynamic vs. Static Scope:
 
 C# primarily uses static scoping.
 Dynamic scoping can be achieved using certain features like reflection.
