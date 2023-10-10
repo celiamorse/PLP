@@ -263,6 +263,48 @@ class exampleClass
 
 ```
 
+# Functions
+In C#, functions are declared using the "public" or "private" access modifiers, followed by the return type, function name, and parameter list (if any). Here's a general syntax for declaring a function in C#:
+```
+access_modifier return_type FunctionName(parameter_list) {
+    // Function body
+    return result; // Return statement (if needed)
+}
+```
+
+## Pass-by-Value and Pass-by-Reference:
+
+C# supports both pass-by-value and pass-by-reference.
+Primitive data types (int, float) are passed by value by default.
+Objects are passed by reference by default.
+
+## Storage of Arguments and Local Variables:
+
+During execution, arguments and local variables are stored on the stack.
+Reference types store a reference on the stack, pointing to the actual object on the heap.
+
+## Scoping Rules:
+
+C# follows lexical scoping rules.
+Variables declared in an outer scope are visible in inner scopes, but not vice versa.
+Variable lifetime depends on their scope, and they are garbage collected when no longer referenced.
+
+## Side-Effects:
+
+Side-effects are possible in C#.
+There are no strict guardrails against side-effects.
+Developers are responsible for managing side effects consciously.
+
+## Local Variable Storage:
+
+Local variable values are stored on the stack for value types.
+Reference types have their references on the stack, pointing to the actual objects on the heap.
+Dynamic vs. Static Scope:
+
+C# primarily uses static scoping.
+Dynamic scoping can be achieved using certain features like reflection.
+
+
 
 
 
