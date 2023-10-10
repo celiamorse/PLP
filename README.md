@@ -293,12 +293,13 @@ Variable lifetime depends on their scope, and they are garbage collected when no
 
 Side-effects are possible in C#.
 There are no strict guardrails against side-effects.
-Developers are responsible for managing side effects consciously.
+Developers are responsible for managing side effects.
 
 ## Local Variable Storage:
 
 Local variable values are stored on the stack for value types.
 Reference types have their references on the stack, pointing to the actual objects on the heap.
+
 Dynamic vs. Static Scope:
 
 C# primarily uses static scoping.
