@@ -90,7 +90,7 @@ class Program
         string myString = "Hello, World!";
 
         // Floating number
-        float myFloat = 3.14f;
+        float myFloat = 3.14;
 
         // Boolean
         bool myBool = true;
