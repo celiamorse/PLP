@@ -112,7 +112,7 @@ class Program
         float result2 = myInt / myFloat;    // Division of int and float 
 
         Console.WriteLine($"result1: {result1}");
-        Console.WriteLine($"result2: {result2}");
+        Console.WriteLine($"result2: {result2}"); //$ is used for interpolation
     }
 }
 
