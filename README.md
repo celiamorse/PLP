@@ -174,7 +174,7 @@ class Bool
 
         // NOT operator
         bool result3 = !a; // Inverts value of a
-        Console.WriteLine("!a: " + result3); // Output: "!a: False"
+        Console.WriteLine("!a: " + result3); // Output: "!a: True"
     }
 }
 
