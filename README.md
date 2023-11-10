@@ -394,9 +394,9 @@ With multiple inheritance, a class can pick up features from several parent clas
 C# allows you to have multiple methods with the same name, but with different parameters.
 
 ## Additional Considerations
-Access Modifiers: C# uses access modifiers (public, private) to control the visibility of classes and methods.
+-Access Modifiers: C# uses access modifiers (public, private) to control the visibility of classes and methods.
 
-Encapsulation: C# encourages encapsulation by using properties to control access to class fields.
+-Encapsulation: C# encourages encapsulation by using properties to control access to class fields.
 
 Consider a class with a private field for age
 ```
@@ -413,7 +413,7 @@ public int Age
 When you access or modify the 'Age' property, you are invoking the 'get' and 'set' methods, which can include additional logic or constraints. This allows you to maintain data integrity and control how the 'Age' field is used by external code. 
 
 
-Polymorphism: C# supports polymorphism, which means you can treat objects from different classes in a consistent way.
+-Polymorphism: C# supports polymorphism, which means you can treat objects from different classes in a consistent way.
 
 An example from https://www.w3schools.com/cs/cs_polymorphism.php:
 
@@ -446,7 +446,7 @@ class Dog : Animal  // Derived class (child)
 ```
 In this program, each animal makes its own distinct sound, but all inherit from the base 'Animal' class. This demonstrates polymorphism. 
 
-Garbage Collection: C# includes automatic garbage collection to manage memory.
+-Garbage Collection: C# includes automatic garbage collection to manage memory.
 
 
 
