@@ -374,6 +374,9 @@ class Functions
 
 ```
 
+-
+## Inheritance in C#
+
 
 
 
