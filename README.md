@@ -449,6 +449,142 @@ In this program, each animal makes its own distinct sound, but all inherit from 
 - Garbage Collection: C# includes automatic garbage collection to manage memory.
 
 
+# Demonstration of Inheritance
+
+- Base Class (Person):
+The Person class is the base class. It has properties for Name and Age, and methods like ToString(), GetYoungest(), and GetOldest().
+- Derived Class (Client):
+The Client class is derived from the Person class using the base(name, age) syntax in its constructor. This means it inherits all properties and methods from the Person class.
+- Inheritance:
+The Client class inherits the properties Name and Age as well as the methods like ToString() and GetYoungest() from the Person class.
+- Polymorphism:
+The List<Person> can hold both Person objects and Client objects because Client is a subclass of Person. This demonstrates polymorphism, allowing objects of derived classes to be treated as objects of their base class.
+- Method Overriding:
+The ToString() method in the Person class is overridden in the Client class. This is an example of method overriding in inheritance.
+
+
+
+```
+//With help from "https://www.w3schools.com/cs/cs_inheritance.php"
+
+using System;
+
+
+
+
+
+
+class CreepyDating
+{
+
+    static void Main()
+    {
+    // create a Person object
+
+    PersonFactory pfClient = new PersonFactory();
+    Person client = pfClient.makePerson();
+    Console.WriteLine(client);
+
+
+    List<Person> dates = new List<Person>{
+
+        new Person("Sean", 25),
+        new Person("Evan", 30),
+        new Person("Bob", 28),
+    };
+
+    foreach (Person item in dates)
+    Console.WriteLine(item);
+
+    foreach(Person date in dates){
+
+        if(client.GetOldest()>date.Age && client.GetYoungest() < date.Age)
+        Console.WriteLine(client.name + " can date " + date.name);
+
+
+
+
+    }
+
+    Console.WriteLine("Thats all your dates!");
+
+    }
+}
+
+
+```
+
+```
+using System;
+
+class PersonFactory{
+
+    public Person makePerson(){
+        Console.WriteLine("Client, what is your name? : ");
+        string name = Console.ReadLine();
+        Console.WriteLine(name + ", enter your age: ");
+        if(int.TryParse(Console.ReadLine(), out int age )){ //Parse the user input as an integer
+           
+            return new Person(name, age);
+
+        }
+        else{
+
+            Console.WriteLine("Invalid age input");
+            return new Person("Default", 0); // Must return a default person
+
+        }
+
+
+    }
+
+    
+}
+
+
+```
+
+
+```
+using System;
+
+public class Person{
+
+public string name { get; set; }
+public double age { get; set; }
+public Person(string n, double a){
+
+
+name = n;
+age =a;
+
+
+}
+
+public double Age{
+    get{ return age;} // 'get' is used to retrieve the values of name and age instead of getter functions
+
+}
+
+
+    public override string ToString() // override keyword is used to override the default ToString
+    {
+        return name + ", age: " + age;
+    }
+
+    public double GetYoungest()
+    {
+        return age/ 2 +7;
+    }
+
+public double GetOldest(){
+
+    return (age - 7)*2;
+}
+
+```
+
+
 
 
 
