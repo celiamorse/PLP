@@ -374,8 +374,79 @@ class Functions
 
 ```
 
--
-## Inheritance in C#
+# Inheritance in C#
+
+## Object Support
+C# uses classes and structs to work with objects. Classes are like blueprints for objects, and structs are simpiler versions. Objects are instances of these classes or structs. 
+
+## Standard Methods for Objects
+C# provides a 'ToString()' method to turn an object into text. You can change how this method works in your class. See the inheritance code at the end of this section for an example implementation of this method. 
+
+## Inheritance and Multiple Inheritance
+Classes in C# can inherit characteristics from one base class (single inheritance).
+However, one can implement multiple interfaces, which are like a contract that defines what a class can do. This can help acheieve some of the benefits of multiple inheritance. 
+
+### What is Multiple Inheritance?
+
+With multiple inheritance, a class can pick up features from several parent classes. It's handy for reusing code and being flexible, but it can also get messy when things overlap. That's why some languages stick to simpler alternatives like interfaces to achieve similar results.
+
+## Overloading Method Names
+C# allows you to have multiple methods with the same name, but with different parameters.
+
+## Additional Considerations
+Access Modifiers: C# uses access modifiers (public, private) to control the visibility of classes and methods.
+
+Encapsulation: C# encourages encapsulation by using properties to control access to class fields.
+
+Consider a class with a private field for age
+```
+private int age;
+```
+Now, encapsulate this field with a property
+```
+public int Age
+{
+    get { return age; }  // Get method to retrieve the age
+    set { age = value; }  // Set method to set the age
+}
+```
+When you access or modify the 'Age' property, you are invoking the 'get' and 'set' methods, which can include additional logic or constraints. This allows you to maintain data integrity and control how the 'Age' field is used by external code. 
+
+
+Polymorphism: C# supports polymorphism, which means you can treat objects from different classes in a consistent way.
+
+An example from https://www.w3schools.com/cs/cs_polymorphism.php:
+
+```
+class Animal  // Base class (parent) 
+{
+  public void animalSound() 
+  {
+    Console.WriteLine("The animal makes a sound");
+  }
+}
+
+class Pig : Animal  // Derived class (child) 
+{
+  public void animalSound() 
+  {
+    Console.WriteLine("The pig says: wee wee");
+  }
+}
+
+class Dog : Animal  // Derived class (child) 
+{
+  public void animalSound() 
+  {
+    Console.WriteLine("The dog says: bow wow");
+  }
+}
+
+
+```
+In this program, each animal makes its own distinct sound, but all inherit from the base 'Animal' class. This demonstrates polymorphism. 
+
+Garbage Collection: C# includes automatic garbage collection to manage memory.
 
 
 
