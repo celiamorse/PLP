@@ -374,6 +374,64 @@ class Functions
 
 ```
 
+# Selection, Loops and Conditionals
+##Boolean values in C#:
+Boolean values in C# are represented as true and false.
+
+##Conditional statements in C#:
+C# supports various conditional statements, including if, if/else, if/else if/else, and the ternary conditional operator ? :. 
+
+##Code block delimiting in C#:
+Code blocks in C# are delimited by curly braces {}.
+
+##Short-circuit evaluation in C#:
+C# supports short-circuit evaluation. For example, in A && B, if A is false, B is not evaluated.
+'''
+bool condition1 = false;
+bool condition2 = true;
+
+// Short-circuit AND (&&) example
+if (condition1 && SomeMethod())
+{
+    // Code to execute if both conditions are true
+}
+else
+{
+    // Code to execute if any of the conditions is false
+}
+
+bool SomeMethod()
+{
+    Console.WriteLine("SomeMethod is called");
+    return true;
+}
+
+
+'''
+In this example, if condition1 is false, SomeMethod() will not be called because the overall result of the AND operation would be false regardless of the second condition. This demonstrates the short-circuit behavior of logical operators in C#.
+
+##Switch-case statements in C#:
+C# supports switch statements. You generally use break to exit a case. continue is not used in the context of switch statements.
+
+'''
+switch (variable)
+{
+    case value1:
+        // Code for value1
+        break;
+    case value2:
+        // Code for value2
+        break;
+    default:
+        // Code for all other cases
+        break;
+}
+'''
+
+
+
+
+
 # Inheritance in C#
 
 ## Object Support
