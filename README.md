@@ -245,7 +245,6 @@ Method parameters and local variables have method scope, making them accessible 
 Class members have class scope and are accessible within the entire class.
 ###    Namespace Scope: 
 Identifiers defined at namespace are accessible within that namespace.
-
 ```
 class exampleClass
 {
