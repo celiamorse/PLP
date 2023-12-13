@@ -378,7 +378,7 @@ class Functions
 Boolean values in C# are represented as true and false.
 
 ## Conditional statements in C#:
-C# supports various conditional statements, including if, if/else, if/else if/else, and the ternary conditional operator ? :. 
+C# supports various conditional statements, including if, if/else, and the ternary conditional operator ?. 
 
 ## Code block delimiting in C#:
 Code blocks in C# are delimited by curly braces {}.
